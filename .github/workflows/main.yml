@@ -73,5 +73,5 @@ jobs:
       - name: Deploy WebAPI
         uses: Azure/k8s-deploy@v1.3
         with:
-          manifests: |
+          manifests:
             k8s/api/deployment.yaml
