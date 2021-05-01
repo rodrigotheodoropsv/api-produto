@@ -35,7 +35,6 @@ jobs:
           push: true
           tags:
             rodrigotheodoro/api-bootcamp-produto:latest
-            rodrigotheodoro/api-bootcamp-produto:${{github.run_number}}
             
 
       # Runs a single command using the runners shell
