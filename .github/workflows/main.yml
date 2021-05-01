@@ -33,9 +33,9 @@ jobs:
           # Path to the Dockerfile
           file: ./src/Dockerfile
           push: true
-          tags:
+          tags: |
             rodrigotheodoro/api-bootcamp-produto:latest
-            
+            rodrigotheodoro/api-bootcamp-produto:${{github.run_number}}
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
