@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: rodrigotheodoro/api-bootcamp-produto:v2
+          image: rodrigotheodoro/api-bootcamp-produto
           ports:
             - containerPort: 8080
           env:
@@ -34,4 +34,4 @@ spec:
     - port: 80
       targetPort: 8080
       nodePort: 30000
-  type: NodePort
+  type: LoadBalancer
